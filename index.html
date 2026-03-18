@@ -1,44 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>RPS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="header">Rock Paper Scissors</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="screen">Start Game</div>
-    <div class="game-container">
-      <div class="game-stats">Wins: 0 Losses: 0 Ties: 0</div>
+<h1>Rock Paper Scissors</h1>
 
-      <button class="emoji-btn-R" onclick="clickHandler()">✊</button>
+<div id="screen">Start Game</div>
+<div id="stats">Wins: 0 Losses: 0 Ties: 0</div>
 
-      <button class="emoji-btn-P" onclick="clickHandler1()">✋</button>
+<button onclick="play('rock')">✊</button>
+<button onclick="play('paper')">✋</button>
+<button onclick="play('scissors')">✌️</button>
 
-      <button class="emoji-btn-S" onclick="clickHandler2()">✌️</button>
+<br><br>
+<button onclick="resetStats()">Reset Stats</button>
 
-      <button onclick="resetstats()" class="stsatsre">Reset Stats</button>
-    </div>
+<script src="script.js"></script>
 
-    <!-- Script must come after buttons so stats and screen exist -->
-    <script>
-      let chosePC = "none";
-      let choseP1 = "none";
-      let P1 = "start";
-      let PC = "startPC";
-      let win = 0;
-      let tie = 0;
-      let lose = 0;
-      const items = ["rock", "paper", "scissors"];
-      const screen = document.querySelector(".screen");
-      const stats = document.querySelector(".game-stats");
-    </script>
-    <script src="./script.js"></script>
-  </body>
+</body>
 </html>
