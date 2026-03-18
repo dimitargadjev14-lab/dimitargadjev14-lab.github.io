@@ -1,0 +1,82 @@
+html, body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand, sans-serif;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+
+.game-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 30px;              
+  margin-top: 50px;
+}
+
+
+.emoji-btn-R, .emoji-btn-P, .emoji-btn-S {
+  font-size: 80px;
+  padding: 20px;
+  background-color: #111;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.emoji-btn-R:hover, .emoji-btn-P:hover, .emoji-btn-S:hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
+
+
+.screen {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.game-stats {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.stsatsre{
+  font-family:Quicksand ;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius:15% ;
+ background-color: yellow;
+ padding: 35px;
+ padding-left: 40px;
+ padding-right: 40px;
+ border: none;
+ transition: 1.1s;
+ cursor: pointer;
+ 
+}
+
+.stsatsre:hover{
+ padding: 40px;
+ padding-left: 45px;
+ padding-right: 45px;
+ font-size:23px;
+ font-weight: 600;
+ background-color: red;
+}
+
+.stsatsre:hover::after{
+  content: " ⚠️";
+  margin-left: 8px;
+}
